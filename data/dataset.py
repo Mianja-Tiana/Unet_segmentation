@@ -23,7 +23,7 @@ class BiologyDataset(Dataset):
         # Associer les images avec leurs masques
         pair = {}
         for img in glob.glob(os.path.join(root, "*", "*")):        
-            if (m := re.search(r'([^/]+?)(?:_mask.*)?\\.png$', img)):
+            if (m := re.search(r'([^/]+?)(?:_mask.*)?.png$', img)):
                 img_id = m.group(1)
                 if img_id in pair:
                     if "mask" in img:
@@ -60,7 +60,7 @@ class BiologyDataset(Dataset):
 
       
         import torch
-        weights = torch.empty(mask.size(), dtype=torch.float64)
+        weights = torch.empty(mask.shape, dtype=torch.float64)
         for c in np.unique(mask):
             weights[mask == c] = self.class_weight.get(c, 1.0)
         
