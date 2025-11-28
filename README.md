@@ -14,15 +14,15 @@ This project provides a clean implementation of the U-Net architecture for image
 ```
 unet-segmentation/
 ├── data/
-│   └── dataset.py              # Dataset loader and preprocessing
+│   └── dataset.py             
 ├── models/
-│   └── unet.py                 # U-Net architecture
+│   └── unet.py                 
 ├── utils/
-│   ├── transforms.py           # Data augmentation
-│   └── evaluation.py           # Metrics and visualization
-├── tests/                      # Test suite
-├── train.py                    # Training script
-├── evaluate.py                 # Evaluation script
+│   ├── transforms.py          
+│   └── evaluation.py           
+├── tests/                     
+├── train.py                   
+├── evaluate.py                
 └── requirements.txt
 ```
 
