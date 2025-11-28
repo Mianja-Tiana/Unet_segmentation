@@ -1,4 +1,4 @@
-"""Exécute tous les tests du projet."""
+
 import sys
 import subprocess
 
