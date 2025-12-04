@@ -29,6 +29,3 @@ unet-segmentation/
 
 ---
 
-<p align="center">
-  <i>Professional implementation for medical imaging research</i>
-</p>
